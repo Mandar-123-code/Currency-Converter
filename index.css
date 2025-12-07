@@ -102,7 +102,6 @@ input:focus {
   color: #1b1b2f;
   font-weight: bold;
 }
-/* Dark Mode */
 .dark-mode {
   background: #121212;
   color: #eee;
@@ -139,7 +138,6 @@ input:focus {
   color: #f093fb;
 }
 
-/* Responsive Design for Tablets and Mobiles */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

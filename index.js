@@ -46,5 +46,5 @@ toggleBtn.addEventListener("click", () =>
   document.body.classList.toggle("dark-mode")
 );
 
-// Auto-convert on load
+
 window.addEventListener("load", () => convertCurrency());
