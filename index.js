@@ -3,7 +3,7 @@ const fromSelect = document.getElementById("from");
 const toSelect = document.getElementById("to");
 const convertBtn = document.getElementById("convert-btn");
 const resultDiv = document.getElementById("result");
-const toggleBtn = document.getElementById("theme-toggle");
+
 
 const symbols = {
   USD: "$",
@@ -37,14 +37,11 @@ async function convertCurrency() {
     resultDiv.textContent = `${symbols[from]}${amount} ${from} = ${symbols[to]}${converted} ${to}`;
   } catch (err) {
     console.error(err);
-    resultDiv.textContent = "Error fetching rates.";
+    resultDiv.textContent = "Error fetching rates.Please Check your Internet Connection.";
   }
 }
 
 convertBtn.addEventListener("click", convertCurrency);
-toggleBtn.addEventListener("click", () =>
-  document.body.classList.toggle("dark-mode")
-);
 
 
 window.addEventListener("load", () => convertCurrency());
